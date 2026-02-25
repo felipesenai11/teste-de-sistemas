@@ -167,4 +167,3 @@
 * **Pré-condição:** Token expirado.
 * **Entrada:** Requisição autenticada com token expirado.
 * **Resultado Esperado:** HTTP 401 Unauthorized.
-teste
