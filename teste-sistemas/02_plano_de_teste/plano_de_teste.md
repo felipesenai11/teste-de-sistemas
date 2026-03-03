@@ -1,31 +1,74 @@
-# Plano de Teste – Sistema SRL
+# 📋 Plano de Teste – Sistema SRL
 
 ## 1. Escopo
-O teste abrange todas as funcionalidades descritas no Documento de Requisitos v1.0, como: Módulos de Autenticação (Login/Registro), Salas, Reservas e Incidentes; Validação das Regras de Negócio (RN01 a RN12); Verificação de segurança baseada em perfis (ADMIN vs USER).
+
+Validação completa da API REST do Sistema de Reservas de Laboratório (SRL), incluindo:
+
+* Autenticação
+* Salas
+* Reservas
+* Incidentes
+* Regras de Negócio
+* Permissões por perfil
+
+---
 
 ## 2. Objetivo
-Garantir que a API processe as requisições corretamente, respeite as restrições de horários e permissões, e retorne os códigos de status HTTP apropriados (ex: 201 Created, 403 Forbidden, 400 Bad Request).
+
+Garantir que:
+
+* Todos os requisitos funcionais sejam atendidos
+* Todas as regras de negócio sejam respeitadas
+* O controle de acesso esteja correto
+* A API retorne status HTTP adequados
+
+---
 
 ## 3. Estratégia de Teste
-Vamos usar o Swagger para fazer "perguntas" ao sistema e ver se a "resposta" é a correta.
 
-Testes de Sucesso: Mandar os dados certinhos e ver se ele aceita.
-Testes de Erro: Tentar quebrar as regras (tipo colocar uma senha curta) e ver se o sistema percebe e avisa o erro.
+### Tipos de Teste
 
+* Teste Funcional
+* Teste de Regras de Negócio
+* Teste de Segurança (401 / 403)
+* Teste de Validação de Dados
+
+### Abordagem
+
+* Testes manuais via Postman
+* Testes positivos e negativos
+* Validação de conflitos de reserva
+
+---
 
 ## 4. Ambiente
-Ferramentas: Swagger e o Banco de Dados de teste.
-Padrão de Dados: Datas em ISO (YYYY-MM-DD) e horários em HH:MM.
+
+* API REST
+* Banco de Dados configurado
+* Postman ou similar
+* Datas no formato YYYY-MM-DD
+* Horários no formato HH:MM
+
+---
 
 ## 5. Critérios de Entrada
-O documento de requisitos.
-O código do sistema pronto.
-API rodando em ambiente local.
+
+* API disponível
+* Banco configurado
+* Requisitos aprovados
+
+---
 
 ## 6. Critérios de Saída
-100% dos casos de teste executados.
-Nenhum erro crítico (Bug) de segurança ou regra de negócio (ex: reserva duplicada) pendente.
+
+* 100% dos requisitos testados
+* Nenhum erro crítico aberto
+* Regras de negócio validadas
+
+---
 
 ## 7. Responsáveis
-Desenvolvedor/Tester: Felipe Pereira Silva
-Revisor: Israel de Marcos Ferreira da Silva
+
+* Testador
+* Desenvolvedor
+* Administrador do Sistema
