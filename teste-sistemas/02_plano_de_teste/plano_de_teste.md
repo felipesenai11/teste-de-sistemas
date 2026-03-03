@@ -69,6 +69,5 @@ Garantir que:
 
 ## 7. Responsáveis
 
-* Testador
-* Desenvolvedor
-* Administrador do Sistema
+* Testador: Felipe Pereira Silva, Bruno dos Anjos 
+* Administrador do Sistema: Israel
