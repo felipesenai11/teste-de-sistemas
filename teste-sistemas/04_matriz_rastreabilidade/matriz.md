@@ -1,7 +1,7 @@
 # Matriz de Rastreabilidade
 
 | Requisito | Casos de Teste   |
-| --------- | ---------------- |
+| :-------- | :--------------- |
 | RF01      | CT01             |
 | RF02      | CT04, CT05       |
 | RF03      | CT04             |
@@ -13,6 +13,7 @@
 | RF09      | CT18             |
 | RF10      | CT21             |
 | RF11      | CT18             |
+| RF12      | CT21             |
 | RN01      | CT02             |
 | RN02      | CT03             |
 | RN03      | CT06             |
